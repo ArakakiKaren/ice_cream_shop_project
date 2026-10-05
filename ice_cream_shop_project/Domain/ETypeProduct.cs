@@ -9,6 +9,5 @@ namespace ice_cream_shop_project.Domain
         IceCream,
         Acai,
         Popsicle
-        
     }
 }

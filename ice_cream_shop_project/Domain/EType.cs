@@ -4,9 +4,11 @@ using System.Text;
 
 namespace ice_cream_shop_project.Domain
 {
-    public class Payment
+    public enum EType
     {
-        public EType Type { get; set; }
-        public double Total { get; set; }
+        CreditCard,
+        DebitCard,
+        Pix,
+        Cash
     }
 }
