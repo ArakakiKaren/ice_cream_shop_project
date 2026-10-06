@@ -5,11 +5,15 @@ using System.Text;
 
 namespace ice_cream_shop_project.Domain
 {
-    public class Payment
+    public class Expense
     {
         public Guid Id { get; set; }
-        public EPaymentType Type { get; set; }
-        public decimal Total { get; set; }
+        public string Description { get; set; } = string.Empty;
+        public EExpenseCategory Category { get; set; }
+        public DateTime Date {  get; set; }
         public DateTime PaidAt { get; set; }
+        public EExpenseStatus Status { get; set; }
+
+
     }
 }

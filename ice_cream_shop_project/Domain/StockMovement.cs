@@ -5,12 +5,13 @@ using System.Text;
 
 namespace ice_cream_shop_project.Domain
 {
-    public abstract class Product
+    public class StockMovement
     {
         public Guid Id { get; set; }
-        public string Name { get; set; }
-        public ETypeProduct Type { get; set; }
+        public Product Product { get; set; }
+        public EStockMovementType StockMovementType { get; set; }
+        public decimal Amount { get; set; }
+        public DateTime CreatedAt { get; set; }
         public string? Description { get; set; }
-        public bool Active { get; set; }
     }
 }
