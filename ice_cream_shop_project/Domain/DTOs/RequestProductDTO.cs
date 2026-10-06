@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ice_cream_shop_project.Domain
+namespace ice_cream_shop_project.Domain.DTOs
 {
-    public abstract class Product
+    public class RequestProductDTO
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;

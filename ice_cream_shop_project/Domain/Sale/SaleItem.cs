@@ -8,7 +8,6 @@ namespace ice_cream_shop_project.Domain.Sale
     {
         public Guid Id { get; set; }
         public Product Product { get; set; }
-        public decimal UnitPrice { get; set; }
         public abstract decimal SubTotal { get; }
     }
 }

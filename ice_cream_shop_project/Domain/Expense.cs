@@ -11,9 +11,8 @@ namespace ice_cream_shop_project.Domain
         public string Description { get; set; } = string.Empty;
         public EExpenseCategory Category { get; set; }
         public DateTime Date {  get; set; }
-        public DateTime PaidAt { get; set; }
+        public DateTime? PaidAt { get; set; }
         public EExpenseStatus Status { get; set; }
-
-
+        public decimal Value { get; set; }
     }
 }

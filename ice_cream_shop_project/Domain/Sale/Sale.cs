@@ -11,7 +11,7 @@ namespace ice_cream_shop_project.Domain.Sale
         public Guid Id { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? SoldAt { get; set; }
-        public ESaleStatus SoldAt { get; set; }
+        public ESaleStatus Status { get; set; }
         public Collection<SaleItem> Items { get; set; }
         public decimal Total { get; set; }
         public Payment? Payment { get; set; }

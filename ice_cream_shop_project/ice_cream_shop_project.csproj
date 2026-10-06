@@ -8,9 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Api\" />
     <Folder Include="CrossCutting\" />
-    <Folder Include="Data\" />
+    <Folder Include="Data\Repository\" />
   </ItemGroup>
 
 </Project>
