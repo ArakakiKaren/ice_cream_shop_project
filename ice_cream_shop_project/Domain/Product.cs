@@ -12,14 +12,5 @@ namespace ice_cream_shop_project.Domain
         public ETypeProduct Type { get; set; }
         public string? Description { get; set; }
         public bool Active { get; set; }
-
-        public Product(Guid id, string name, ETypeProduct type, string? description, bool active)
-        {
-            Id = id;
-            Name = name;
-            Type = type;
-            Description = description;
-            Active = active;
-        }
     }
 }

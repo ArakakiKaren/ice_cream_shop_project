@@ -8,5 +8,7 @@ namespace ice_cream_shop_project.Domain.Interfaces
     public interface IIceCreamShopContext
     {
         DbSet<Product> Product { get; set; }
+
+        int SaveChanges();
     }
 }

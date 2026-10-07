@@ -10,9 +10,16 @@ namespace ice_cream_shop_project.Data.Repository
 {
     public class ProductRepository : IProductRepository
     {
+        private readonly IIceCreamShopContext _context;
+        
+        public ProductRepository(IIceCreamShopContext context)
+        {
+            _context = context;
+        }
+        
         public void Add(Product product)
         {
-            IceCreamShopContext.Set<Product>().Add(product);
+            _context.Product.Add(product);
         }
     }
 }
