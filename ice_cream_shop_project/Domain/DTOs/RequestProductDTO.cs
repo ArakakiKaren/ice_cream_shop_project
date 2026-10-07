@@ -7,10 +7,9 @@ namespace ice_cream_shop_project.Domain.DTOs
 {
     public class RequestProductDTO
     {
-        public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public ETypeProduct Type { get; set; }
         public string? Description { get; set; }
-        public bool Active { get; set; }
+        public ESaleMethod SaleMethod { get; set; }
     }
 }
